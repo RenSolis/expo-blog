@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+
+<div>
+  <%= link_to 'Edit', @post %>
+</div>
+<div>
+  <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
